@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 110%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    scroll-behavior: smooth;
+}
+
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #0f2027;
+    border-bottom: 3px solid #f4f4f4;
+} 
+
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+} 
+
+
+.nav-bar a:hover {
+    color: lightgray;
+}
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    position: relative;
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -63px);
+    /* color: #000; */
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+} 
+
+.ptext-bottom {
+    transform: translate(-50%, 126px);
+}
+
+.ptext .border:hover{
+    cursor: pointer;
+    
+    transition: ease 0.25s;
+}
+
+.ptext .border {
+    background-color: #0F2027;
+    color: #fff;
+    padding: 20px 25px; 
+}
+
+.ptext .border.trans {
+    background-color: #fff;
+    color: #0F2027;
+    font-weight: 500;
+}
+
+.pimg1 {
+    background-image: url('./img/image1.jpg');
+    min-height: 100%;
+}
+.pimg2 {
+    background-image: url('./img/image2.jpeg');
+    min-height: 500px;
+}
+.pimg3 {
+    background-image: url('./img/image3.jpeg');
+    min-height: 500px;
+}
+
+.pimg4 {
+    background-image: url('./img/image11.jpg');
+    min-height: 100%;
+    position: relative;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 150px;
+}
+
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #555
+}
+
+.section-dark {
+    background-color: #0f2027;
+    color: #f4f4f4;
+}
+
+
+.footer {
+    
+    width: 100%;
+    background-color: #0f2027;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #0f2027;
+    border-top: 3px solid #f4f4f4;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+
+
+@media (max-width: 568px) {
+    .pimg1, .pimg2, .pimg3 {
+        background-attachment: scroll;
+    }
+}

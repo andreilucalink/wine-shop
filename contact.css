@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 120vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8em;
+    background-color:  #203A43;
+    color: #666;
+    scroll-behavior: smooth;
+}
+
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #0f2027;
+    border-bottom: 3px solid #f4f4f4;
+} 
+
+
+.nav-bar a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+} 
+
+
+.nav-bar a:hover {
+    color: lightgray;
+}
+
+
+.card-container {
+    font-weight: 600;
+    max-width: 1100px;
+    height: 700px;
+    color: #f4f4f4;
+    margin: 80px auto auto auto;
+    overflow: auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .card-header {
+    height: 150px;
+    width: 350px;
+    position: relative;
+    background-color: #357376;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 20px;
+}
+
+.card-container .card-header-footer {
+    background-color: #6ba8a9;
+    height: 40px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 0 20px ;
+}
+
+.card-container .card-social {
+    height: 60px;
+    width: 350px;
+    color: #0f2027;
+    background-color:#f4f4f4;
+    margin-top: 15px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.card-container .card-social:hover {
+    cursor: pointer;
+}
+
+.card-container .card-social .left {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.card-container .card-social .right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.card-container .card-social img {
+    height: 32px;
+}
+
+.card-container .card-social .contact-info {
+    margin-left: 10px;
+}
+.card-container .card-social .contact-info.phone {
+    letter-spacing: 1.5px;
+}
+
+
+
+@media (max-width: 568px) {
+    .card-container {
+        margin: 50px auto auto auto;
+    }
+}
