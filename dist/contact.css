@@ -10,7 +10,7 @@ body, html {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.8em;
-    background-color:  #203A43;
+    background-color:  rgba(32, 58, 67);
     color: #666;
     scroll-behavior: smooth;
 }
@@ -61,13 +61,14 @@ body, html {
 }
 
 .card-container .card-header {
-    height: 150px;
+    height: 180px;
     width: 350px;
     position: relative;
     background-color: #357376;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     padding: 20px;
+    text-align: right;
 }
 
 .card-container .card-header-footer {
@@ -76,7 +77,7 @@ body, html {
     width: 350px;
     display: flex;
     align-items: center;
-    bottom: 0;
+    letter-spacing: 1px;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     padding: 0 20px ;
@@ -94,8 +95,12 @@ body, html {
     padding: 0 20px;
 }
 
+
+    
+
 .card-container .card-social:hover {
     cursor: pointer;
+    background-color: #fff;
 }
 
 .card-container .card-social .left {
