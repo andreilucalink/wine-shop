@@ -5,7 +5,7 @@
 }
 
 body, html {
-    height: 120vh;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -47,7 +47,7 @@ body, html {
 
 .contact-header {
     margin-top: 150px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     height: 15vh;
     display: flex;
     flex-direction: column;
@@ -75,13 +75,14 @@ body, html {
 .contact-box {
     font-size: 14px;
     display: flex;
-    align-items: center;
+    min-height: 80vh;
     justify-content: center;
 }
+
 .card-container {
     font-weight: 600;
     max-width: 400px;
-    height: 700px;
+    max-height: 700px;
     color: #f4f4f4;
     margin-right: 50px;
     overflow: auto;
@@ -148,10 +149,7 @@ body, html {
 }
 
 
-    
-
 .card-container .card-social:hover {
-    cursor: pointer;
     background-color: #203A43;
 }
 
@@ -169,6 +167,7 @@ body, html {
 
 .card-container .card-social img {
     height: 32px;
+    cursor: pointer;
 }
 
 .card-container .card-social .contact-info {
@@ -176,6 +175,30 @@ body, html {
 }
 .card-container .card-social .contact-info.phone {
     letter-spacing: 1.5px;
+}
+
+
+.card-container .card-social span.contact-info::selection{
+    background: #fff;
+    color: #0f2027;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0f2027;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #0f2027;
+    border-top: 3px solid rgb(98, 169, 199);
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
 }
 
 
