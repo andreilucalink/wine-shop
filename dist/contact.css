@@ -7,10 +7,10 @@
 body, html {
     height: 120vh;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.8em;
-    background-color:  rgba(32, 58, 67);
+    background-color:  #f4f4f4;
     color: #666;
     scroll-behavior: smooth;
 }
@@ -28,7 +28,7 @@ body, html {
     align-items: center;
     padding: 30px 0;
     background-color: #0f2027;
-    border-bottom: 3px solid #f4f4f4;
+    border-bottom: 4px solid rgb(98, 169, 199);
 } 
 
 
@@ -45,13 +45,45 @@ body, html {
     color: lightgray;
 }
 
+.contact-header {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
 
+.contact-header h1 {
+    font-weight: 700;
+    font-size: 72px;
+    color: #0f2027;
+    margin-bottom: 36px;
+    line-height: 1.2;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+}
+.contact-header h1 span {
+    color: #444;
+}
+
+.contact-box {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card-container {
     font-weight: 600;
-    max-width: 1100px;
+    max-width: 400px;
     height: 700px;
     color: #f4f4f4;
-    margin: 80px auto auto auto;
+    margin-right: 50px;
     overflow: auto;
     padding: 0 2rem;
     display: flex;
@@ -61,20 +93,40 @@ body, html {
 }
 
 .card-container .card-header {
-    height: 180px;
-    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 400px;
     position: relative;
-    background-color: #357376;
+    background-color: #0f2027;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     padding: 20px;
     text-align: right;
 }
 
+
+.card-container .card-header .card-image {
+    display: inline-block;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-image.img1 {
+    background-image: url('./img/man.jpg');
+}
+.card-image.img2 {
+    background-image: url('./img/man2.jpg');
+}
+
 .card-container .card-header-footer {
-    background-color: #6ba8a9;
+    background-color: #203A43;
     height: 40px;
-    width: 350px;
+    width: 400px;
     display: flex;
     align-items: center;
     letter-spacing: 1px;
@@ -85,9 +137,9 @@ body, html {
 
 .card-container .card-social {
     height: 60px;
-    width: 350px;
-    color: #0f2027;
-    background-color:#f4f4f4;
+    width: 400px;
+    color: #f4f4f4;
+    background-color:#2C5364; /* 6ba8a9 */
     margin-top: 15px;
     border-radius: 7px;
     display: flex;
@@ -100,7 +152,7 @@ body, html {
 
 .card-container .card-social:hover {
     cursor: pointer;
-    background-color: #fff;
+    background-color: #203A43;
 }
 
 .card-container .card-social .left {
@@ -133,3 +185,4 @@ body, html {
         margin: 50px auto auto auto;
     }
 }
+

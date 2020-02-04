@@ -56,7 +56,9 @@ body, html  {
 }
 
 .main-header {
-    height: 55vh;
+    margin-top: 200px;
+    margin-bottom: 130px;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
