@@ -74,19 +74,19 @@ body, html {
 
 .contact-box {
     font-size: 14px;
-    display: flex;
+    display: grid;
+    max-width: 1000px;
+    margin: auto;
     min-height: 80vh;
-    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .card-container {
     font-weight: 600;
-    max-width: 400px;
+    width: 100%;
     max-height: 700px;
     color: #f4f4f4;
-    margin-right: 50px;
     overflow: auto;
-    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,9 +204,16 @@ body, html {
 
 
 
-@media (max-width: 568px) {
+@media (max-width: 905px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
     .card-container {
-        margin: 50px auto auto auto;
+        margin-top: 50px;
+    }
+
+    div.card-container:nth-of-type(2){
+        margin-bottom: 50px;
     }
 }
 
