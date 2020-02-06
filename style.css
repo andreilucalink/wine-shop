@@ -30,7 +30,6 @@ body, html {
     border-bottom: 3px solid #f4f4f4;
 } 
 
-
 .nav-bar a {
     color: #fff;
     text-decoration: none;
@@ -39,15 +38,17 @@ body, html {
     letter-spacing: 1px;
 } 
 
-
 .nav-bar a:hover {
     color: lightgray;
 }
+
+
 .pimg1, .pimg2, .pimg3, .pimg4 {
     position: relative;
     opacity: 0.8;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -56,11 +57,11 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* color: #000; */
     font-size: 25px;
     letter-spacing: 5px;
     text-transform: uppercase;
 } 
+
 
 .ptext-bottom {
     transform: translate(-50%, 126px);
@@ -68,7 +69,6 @@ body, html {
 
 .ptext .border:hover{
     cursor: pointer;
-    
     transition: ease 0.25s;
 }
 
@@ -76,7 +76,8 @@ body, html {
     background-color: #0F2027;
     border: 1px solid #f4f4f4;
     color: #fff;
-    padding: 20px 25px; 
+    text-align: center;
+    padding: 20px 25px;
 }
 
 .ptext .border.trans {
@@ -86,29 +87,28 @@ body, html {
 }
 
 .pimg1 {
-    background-image: url('./img/image1.jpg');
+    background-image: url('./img/wine4.jpg');
     min-height: 100%;
 }
 .pimg2 {
-    background-image: url('./img/image2.jpeg');
+    background-image: url('./img/wine2.jpg');
     min-height: 500px;
 }
 .pimg3 {
-    background-image: url('./img/image3.jpeg');
+    background-image: url('./img/wine3.jpg');
     min-height: 500px;
 }
 
 .pimg4 {
-    background-image: url('./img/image11.jpg');
+    background-image: url('./img/wine6.jpg');
     min-height: 100%;
-    position: relative;
+   /*  position: relative; */
 }
 
 .section {
     text-align: center;
     padding: 50px 150px;
 }
-
 
 .section h2 {
     margin-bottom: 20px;
@@ -146,11 +146,24 @@ body, html {
 
 
 @media (max-width: 568px) {
-    .pimg1, .pimg2, .pimg3 {
+    /* .pimg1, .pimg2, .pimg3 {
         background-attachment: scroll;
+    } */
+    .pimg2, .pimg3 {
+        min-height: 100%;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px){
+    .ptext {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
 
+@media (max-width: 900px) {
+    .section { 
+        font-size: 0.9rem;
+        padding: 20px 30px;
+    }
 }
