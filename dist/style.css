@@ -154,13 +154,14 @@ main {
     font-size: 12px;
   }
 
-  .pimg1,.pimg2,.pimg3,.pimg4 {
+  /* .pimg1,.pimg2,.pimg3,.pimg4 {
     background-attachment: scroll;
-  }
+  } */
 
-  .pimg4 {
+  /* .pimg4 {
     background-image: url("./img/winetest.jpg");
-  }
+  } */
+
   .pimg2,
   .pimg3 {
     min-height: 100vh;
