@@ -151,7 +151,7 @@ main {
 
 @media (max-width: 568px) {
   .ferdi-navbar .nav-link {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .pimg1,.pimg2,.pimg3,.pimg4 {
@@ -171,15 +171,11 @@ main {
   }
 }
 
+
 @media (max-width: 900px) {
   .section {
     font-size: 0.9rem;
     line-height: 1.9;
     padding: 30px 30px;
-  }
-
-  .ferdi-navbar .nav-link {
-    font-size: 14px;
-    width: 80px;
   }
 }
