@@ -45,6 +45,129 @@ html {
   outline: none !important;
 }
 
+.contact-wrapper {
+  /*  background: #333; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  max-width: 900px;
+  height: 800px;
+}
+
+.contact-wrapper .contact-card {
+  background: #f4f4f4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 600px;
+  width: 300px;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+}
+
+.contact-card .profile-bg {
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-image: url(./img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 260px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+}
+
+
+#member1 {
+  background-image: url(./img/profile1.jpg);
+}
+
+#member2 {
+  background-image: url(./img/man.jpg);
+}
+
+
+.contact-card .profile-img {
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: 5px solid #f4f4f4;
+  z-index: 999;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.contact-details h3 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.contact-details img.country {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+}
+
+.contact-details .email-img, .phone-img {
+  margin-right: 15px;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.contact-details p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.contact-details .email a {
+  text-decoration: none;
+  color: #0f2027;
+  font-weight: 600;
+}
+
+.contact-details .phone a {
+  text-decoration: none;
+  color: #0f2027;
+  font-weight: 600;
+}
+
+.contact-details .phone-button, .email-button {
+  margin: auto;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .facebook-page {
   display: flex;
   flex-direction: column;
@@ -86,6 +209,7 @@ html {
   .facebook-page p {
     font-size: 18px;
   }
+
   .facebook-page {
     height: 400px;
     width: 280px;
@@ -96,6 +220,7 @@ html {
   .contact-header {
     padding: 5px;
   }
+
   .contact-box {
     margin-top: 50px;
   }
