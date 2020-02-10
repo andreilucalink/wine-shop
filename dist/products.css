@@ -91,7 +91,30 @@ html {
   box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-.card-info img {
+
+#product1 {
+  background-image: url(./img/1.jpeg);
+}
+#product2 {
+  background-image: url(./img/2.jpg);
+}
+#product3 {
+  background-image: url(./img/3.jpg);
+}
+#product4 {
+  background-image: url(./img/41.jfif);
+}
+#product5 {
+  background-image: url(./img/5.webp);
+}
+#product6 {
+  background-image: url(./img/6.webp);
+}
+
+.card-info .img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 400px;
   max-width: 500px;
 }
@@ -119,7 +142,7 @@ html {
   margin-bottom: 3rem;
 }
 
-.card-cell:nth-child(even) img {
+.card-cell:nth-child(even) .img {
   order: 2;
 }
 
@@ -129,18 +152,19 @@ a.btn {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background: #ffe7d1;
+  background: #e5dfdf;
   padding: 8px 20px;
   cursor: pointer;
   border-radius: 5px;
   margin-top: 30px;
   width: 140px;
-  transition: "background" "color" 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a.btn:hover {
-  background: rgba(17, 153, 142, 0.8);
-  transition: 0.3s ease;
+  background: #1b262c;
+  border: 1px solid white;
+  transition:  all 0.3s ease;
   color: #f4f4f4;
 }
 
@@ -185,11 +209,11 @@ a.btn:hover {
     box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
   }
 
-  .card-cell:nth-child(even) img {
+  .card-cell:nth-child(even) .img {
     order: 0;
   }
 
-  .card-info img {
+  .card-info .img {
     height: 300px;
     max-width: 400px;
     border-top-left-radius: 25px;
@@ -240,11 +264,11 @@ a.btn:hover {
     box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
   }
 
-  .card-cell:nth-child(even) img {
+  .card-cell:nth-child(even) .img {
     order: 0;
   }
 
-  .card-info img {
+  .card-info .img {
     height: 300px;
     max-width: 400px;
     border-top-left-radius: 25px;
@@ -286,6 +310,7 @@ a.btn:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
   }
 
   .card-cell {
@@ -293,7 +318,7 @@ a.btn:hover {
     margin-bottom: 5px;
   }
 
-  .card-info img {
+  .card-info .img {
     max-width: 250px;
     height: 230px;
   }
@@ -317,6 +342,7 @@ a.btn:hover {
     padding: 5px 10px;
     width: 90px;
     background-color: rgba(0, 128, 128, 0.8);
+   /*  border: 1px solid #f4f4f4; */
     color: white;
   }
 }
