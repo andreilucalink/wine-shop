@@ -47,7 +47,7 @@ html {
 .products-container {
   max-width: 1100px;
   margin: auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 1.2rem 2rem;
 }
 
